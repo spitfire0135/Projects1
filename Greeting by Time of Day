@@ -1,0 +1,19 @@
+// <script id="java_greeting">
+    
+var today = new Date();
+var hourNow = today.getHours()
+var greeting;
+
+if (hourNow >= 18) {
+  greeting = 'GOOD EVENING AND WELCOME!';
+} else if (hourNow >= 12) {
+  greeting = 'GOOD AFTERNOON AND WELCOME!';
+} else if (hourNow > 0) {
+  greeting = 'GOOD MORNING AND WELCOME!';
+} else {
+  greeting = 'WELCOME!';    }
+    
+document.write('<h3>' + greeting + '</h3>');
+    
+// Could also use the following:
+// document.getElementById('java_greeting').innerHTML='';
